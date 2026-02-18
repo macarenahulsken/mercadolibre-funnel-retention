@@ -1,0 +1,44 @@
+,,,,
+,,Context,Hallazgo,Implicación
+,"Entre el [01/01/2025] y el [08/31/2025], ¿cuál es la tasa de conversión entre cada etapa clave del embudo.
+
+🔹 ¿En qué paso se observa la mayor caída porcentual de usuarios?
+🔹 ¿Cómo varía esta pérdida por país (country)?","Se analiza el embudo de compra de usuarios de Mercado Libre entre el 01-01-2025 y el 31-08-2025, desde la selección del producto hasta la compra final, con el objetivo de identificar el punto de mayor abandono y generar insights accionables para optimizar la experiencia de usuario y aumentar la conversión de ventas.","hallazgo 1:
+Se observa una caida porcentual de usuarios entre 'select_item' (76.9%) y 'add_to_cart' donde solo se mantiene el 11.01% de usuarios.
+Hallazgo 2:
+Paraguay tiene una conversion a 0% desde la etapa 'add_to_cart'.
+Hallazgo 3:
+Uruguay muestra una conversion estable del 4,5% a partir de begin_checkout hasta purchase.
+Hallazgo 4: Argentina (8.7%) y Brasil (8.9%) tienen las conversiones más bajas entre 'select_item' y 'add_to_cart', significativamente por debajo del promedio general (11.01%).","Prioridad 1: Paraguay (0% conversión):
+Revisar disponibilidad de productos y problemas técnicos/legales.
+Es la acción con el retorno más rápido al recuperar un mercado inexistente.
+
+Prioridad 2: Conversión general (select_item - add_to_cart):
+Optimizar página de producto y usabilidad del botón.
+
+Prioridad 3: Argentina y Brasil (conversiones bajas):
+Revisar métodos de pago, costos de envío y localización."
+,"¿Qué tan bien retenemos a los usuarios a lo largo del tiempo?
+
+🔹 Para los usuarios que se registraron entre el [01/01/2025] y el [06/01/2025], ¿cuál es la tasa de retención en D7, D14, D21, D28?
+🔹 *¿Cómo se comporta la retención agrupados por país (`country`)?
+","Se analiza la retención de los clientes de Mercado libre en los primeros 28 días dividido en D7(día 7), D14(día 14), D21(día 21), D28 (día 28) para el periodo 1-1-2025 al 31-8-2025 para contar los usuarios que siguen activos después de X cantidad de días. con el propósito de analizar la fidelidad","Hallazgo 1:
+Marzo 2025 supera a agosto 2025 por 27 puntos porcentuales en D14 (56.8% vs 29.7%), evidenciando deterioro en cohortes recientes.
+Hallazgo 2:
+Perú mantiene mejor retención a largo plazo que Chile en D28 (3.2% vs 1.7%), pese a inicio similar.
+Hallazgo 3:
+76% de usuarios se pierden entre D7 y D21, indicando problemas críticos en la experiencia inicial.","Prioridad 1: 'Hallazgo 3'
+Implementar flujos de acompañamiento post-venta (guías y encuestas NPS) entre D4 y D10 para corregir fricciones logísticas y frenar la fuga del 76% de usuarios.
+Prioridad 2: 'Hallazgo 1'
+Auditar canales de adquisición (Agosto vs. Marzo): Ajustar el targeting si la calidad del tráfico bajó o lanzar campañas de recuperación si el fallo fue operativo.
+Prioridad 3: 'Hallazgo 2'
+Replicar el ""Modelo Perú"" en Chile. Implementar recompensas progresivas antes del D28 para estandarizar la retención de largo plazo en la región.
+Para retención a largo plazo:
+Migrar de descuentos genéricos a beneficios por hitos (ej. envío gratis en 2ª compra). El objetivo es crear hábito de consumo antes del D21."
+,,,,
+,,,,
+,,,,
+,Reflexión personal,,,
+,"- ¿Qué etapa mejorarías primero?
+","Priorizaría la transición de view_item a add_to_cart. Esta etapa no solo presenta la mayor fuga (86%), sino que optimizarla genera un efecto multiplicador en todo el embudo: al aumentar el volumen de usuarios que entran al carrito, las etapas posteriores —que ya muestran mayor estabilidad— impulsarán las ventas finales de forma exponencial sin necesidad de aumentar la inversión en tráfico.",,
+,- ¿Qué aprendiste sobre el comportamiento del usuario?,"Aprendí que el comportamiento inicial es transcultural pero frágil: aunque los mercados son distintos, la resistencia a la conversión en la primera semana es una constante regional. Esto sugiere que la retención no es un problema de ""país"", sino de experiencia inicial (onboarding). Los usuarios deciden el valor de la plataforma en los primeros 7 días; si no logramos la conversión temprana o el hábito en ese periodo, el costo de recuperarlos después es mucho más alto.",,
